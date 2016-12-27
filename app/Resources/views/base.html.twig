@@ -5,10 +5,10 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        <script src="{{ asset('assets/build/vendor.js', 'webpack') }}"></script>
-        <script src="{{ asset('assets/build/main.js', 'webpack') }}"></script>
+        <script src="{{ asset('/assets/build/vendor.js', 'webpack') }}"></script>
+        <script src="{{ asset('/assets/build/main.js', 'webpack') }}"></script>
         {#{% if use_webpack_dev_server %}
-        <link rel="stylesheet" href="{{ asset('assets/build/stylesheets/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('/assets/build/stylesheets/main.css') }}">
         {% endif %}#}
 </head>
     <body>
@@ -29,11 +29,129 @@
 			</div><!-- end .row -->
 		
 	</header><!-- end #header-global -->
+
+		<section id="content-slider">
+		
+			<div class="row">
+			
+		  		<div id="main-slider" class="flexslider">
+				    
+				    <ul class="slides">
+				    
+				        <li><a href=""><img src="/assets/img/slider_placeholder.png" alt="" /></a>
+				        	<div class="flex-caption">
+					        	<div class="details">
+					        		<h1 class="flex-title"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br /><span>We are Golden</span></h1>
+					        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue, at erat hendrerit dictum praesent porta purus eget. Praesent porta, purus eget sagittis imperdiet.</p>
+					        		<a class="read-more-btn" href="about-us.html">Find out who we are &rarr;</a>
+					        	</div>
+					        </div>
+				        </li>
+				        
+				        <li><a href=""><img src="/assets/img/slider_placeholder.png" alt="" /></a>
+				        	<div class="flex-caption">
+					        	<div class="details">
+					        		<h1 class="flex-title"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br /><span>We love design</span></h1>
+					        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue, at erat hendrerit dictum praesent porta purus eget. Praesent porta, purus eget sagittis imperdiet.</p>
+					        		<a class="read-more-btn" href="portfolio-3-col.html">View our work &rarr;</a>
+					        	</div>
+				        	</div>
+				        </li>
+				        
+				        <li><a href=""><img src="/assets/img/slider_placeholder.png" alt="" /></a>
+				        	<div class="flex-caption">
+					        	<div class="details">
+					        		<h1 class="flex-title"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br /><span>We like chatting</span></h1>
+					        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue, at erat hendrerit dictum praesent porta purus eget. Praesent porta, purus eget sagittis imperdiet.</p>
+					        		<a class="read-more-btn" href="contact.html">Let's chat today &rarr;</a>
+					        	</div>
+				        	</div>
+				        </li>
+				    
+				    </ul><!-- end .slides -->
+		  		
+		  		</div><!-- end #main-slider -->
+			
+			</div><!-- end .row -->
+		
+		</section><!-- end #content-slider -->
+		
+		<section id="introduction">
+		
+			<div class="container">
+		
+				<div class="row">
+				
+					<div class="sixteen columns">
+					
+						<p>The steamer Mongolia, belonging to the Peninsular and Oriental Company, built of iron, of two thousand eight hundred tons burden, and five hundred horse-power, was due at eleven o'clock a.m. Hopefully.</p>
+				
+					</div><!-- end .sixteen columns -->
+			
+				</div><!-- end .row -->
+		
+			</div><!-- end .container -->
+		
+		</section><!-- end #introduction -->
+		
         <div class="container">
         {% block content %}
         {% endblock %}
         </div>
     {% endblock %}
+	<footer id="footer-global" role="contentinfo" class="clearfix">
+				
+		<div id="contact-details">
+		
+			<div class="container">
+		
+				<div class="one-third column">
+				
+					<h3>Location</h3>
+					
+					<p>10 Columbus Circle, New York,<br />
+					NY 10019, United States</p>
+				
+				</div>
+				
+				<div class="one-third column">
+				
+					<h3>Contact</h3>
+					
+					<p>(212) 823-6000<br />
+					<a href="">sayhello@golden.com</a></p>
+				
+				</div>
+				
+				<div class="one-third column">
+				
+					<h3>Project Enquiries</h3>
+					
+					<p>We'd love to hear about your latest project. Please <a href="">get in touch</a> with us today.</p>
+				
+				</div>
+		
+			</div><!-- end .container -->
+		
+		</div><!-- end #contact-details -->
+	
+		<div class="container">
+	
+			<div class="sixteen columns">
+		  	  
+	  			<p id="copyright-details">&copy; 2012 Golden. All rights reserved. Designed by GuuThemes.</p>
+	  		
+	  		</div>	  
+		  	
+		</div><!-- end .container -->
+		
+	</footer><!-- end #footer-global -->
+	
+	<div id="back-to-top" style="display: block;">
+				
+		<a href="#"></a>
+			
+	</div><!-- end #back-to-top -->
         {% block javascripts %}{% endblock %}
     </body>
 </html>
