@@ -39,11 +39,13 @@ framework:
         packages:
             webpack: ~
 
-
 # Twig Configuration
 twig:
-    debug:            "%kernel.debug%"
+    debug: "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form_themes:
+        #- ':form:fields.html.twig'
+        - 'bootstrap_3_layout.html.twig'
 
 # Doctrine Configuration
 doctrine:
