@@ -118,5 +118,172 @@ class User extends BaseUser
     {
         return $this->name;
     }
-}
 
+    /**
+     * Set surname
+     *
+     * @param string $surname
+     *
+     * @return User
+     */
+    public function setSurname($surname)
+    {
+        $this->surname = $surname;
+
+        return $this;
+    }
+
+    /**
+     * Get surname
+     *
+     * @return string
+     */
+    public function getSurname()
+    {
+        return $this->surname;
+    }
+
+    /**
+     * Set movie
+     *
+     * @param string $movie
+     *
+     * @return User
+     */
+    public function setMovie($movie)
+    {
+        $this->movie = $movie;
+
+        return $this;
+    }
+
+    /**
+     * Get movie
+     *
+     * @return string
+     */
+    public function getMovie()
+    {
+        return $this->movie;
+    }
+
+    /**
+     * Set book
+     *
+     * @param string $book
+     *
+     * @return User
+     */
+    public function setBook($book)
+    {
+        $this->book = $book;
+
+        return $this;
+    }
+
+    /**
+     * Get book
+     *
+     * @return string
+     */
+    public function getBook()
+    {
+        return $this->book;
+    }
+
+    /**
+     * Set song
+     *
+     * @param string $song
+     *
+     * @return User
+     */
+    public function setSong($song)
+    {
+        $this->song = $song;
+
+        return $this;
+    }
+
+    /**
+     * Get song
+     *
+     * @return string
+     */
+    public function getSong()
+    {
+        return $this->song;
+    }
+
+    /**
+     * Set band
+     *
+     * @param string $band
+     *
+     * @return User
+     */
+    public function setBand($band)
+    {
+        $this->band = $band;
+
+        return $this;
+    }
+
+    /**
+     * Get band
+     *
+     * @return string
+     */
+    public function getBand()
+    {
+        return $this->band;
+    }
+
+    /**
+     * Set sport
+     *
+     * @param string $sport
+     *
+     * @return User
+     */
+    public function setSport($sport)
+    {
+        $this->sport = $sport;
+
+        return $this;
+    }
+
+    /**
+     * Get sport
+     *
+     * @return string
+     */
+    public function getSport()
+    {
+        return $this->sport;
+    }
+
+    /**
+     * Set hobby
+     *
+     * @param string $hobby
+     *
+     * @return User
+     */
+    public function setHobby($hobby)
+    {
+        $this->hobby = $hobby;
+
+        return $this;
+    }
+
+    /**
+     * Get hobby
+     *
+     * @return string
+     */
+    public function getHobby()
+    {
+        return $this->hobby;
+    }
+}
