@@ -1,17 +1,22 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-<div class="container">
     {{ form_start(form) }}
     <h1>Edit profile</h1>
     <div class="row">
         <div class="col-md-4">
             {{ form_row(form.name) }}
+            {{ form_row(form.surname) }}
+            {{ form_row(form.movie) }}
+            {{ form_row(form.song) }}
+            {{ form_row(form.band) }}
+            {{ form_row(form.book) }}
+            {{ form_row(form.sport) }}
+            {{ form_row(form.hobby) }}
         </div>
     </div>
     <div class="text-center">
         <input class="btn btn-primary btn-lg" type="submit" value="Save" />
     </div>
     {{ form_end(form) }}
-</div>
 {% endblock content %}

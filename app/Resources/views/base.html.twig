@@ -7,15 +7,17 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <script src="{{ asset('assets/build/vendor.js', 'webpack') }}"></script>
         <script src="{{ asset('assets/build/main.js', 'webpack') }}"></script>
-        {% if use_webpack_dev_server %}
+        {#{% if use_webpack_dev_server %}
         <link rel="stylesheet" href="{{ asset('assets/build/stylesheets/main.css') }}">
-        {% endif %}
+        {% endif %}#}
 </head>
     <body>
     {% block body %}
+        <div class="container">
         {% block content %}
         
         {% endblock %}
+        </div>
     {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

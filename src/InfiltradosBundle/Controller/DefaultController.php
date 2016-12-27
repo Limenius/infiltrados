@@ -44,9 +44,6 @@ class DefaultController extends Controller
                 'Your profile has been saved.'
             );
 
-            $event = new UserPostPersistEvent($user);
-            $this->get('event_dispatcher')->dispatch('kcloud.event.user_post_persist', $event);
-
             return $this->redirectToRoute('edit_profile');
         }
 
