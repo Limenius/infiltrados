@@ -13,9 +13,24 @@
 </head>
     <body>
     {% block body %}
+        
+	<header id="header-global" role="banner">
+	
+		<div class="container">
+			
+			<div class="row">
+		
+				<div class="header-logo three columns">
+					
+					<div id="logo"><a href="index.html" title="Golden"><img src="/img/golden_header_logo.png" width="62" height="62" alt="Header Logo" /></a></div>
+				  	
+				</div>
+				
+			</div><!-- end .row -->
+		
+	</header><!-- end #header-global -->
         <div class="container">
         {% block content %}
-        
         {% endblock %}
         </div>
     {% endblock %}
