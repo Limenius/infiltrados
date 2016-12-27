@@ -1,0 +1,6 @@
+InfiltradosBundle\Entity\User:
+    user{1..10}:
+        email: <email()>
+        username: <email()>
+        plainPassword: 123456
+        name: <firstName()>
