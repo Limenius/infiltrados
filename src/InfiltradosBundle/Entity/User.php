@@ -4,11 +4,14 @@ namespace InfiltradosBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Model\User as BaseUser;
+use Symfony\Bridge\Doctrine\Validator\Constraints;
 
 /**
  * User
  *
  * @ORM\Table(name="user")
+ * @Constraints\UniqueEntity("email")
+ * @Constraints\UniqueEntity("username")
  * @ORM\Entity(repositoryClass="InfiltradosBundle\Repository\UserRepository")
  */
 class User extends BaseUser

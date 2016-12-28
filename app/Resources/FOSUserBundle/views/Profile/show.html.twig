@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+{% block content %}
+<div class="container text-center">
+    <div id="form-wrapper" class="row">
+        <div class="col-md-12">
+            <h1>Bienvenido</h1>    
+            <a href="{{path('homepage')}}" class="read-more-btn">Continuar →</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
