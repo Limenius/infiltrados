@@ -44,6 +44,12 @@ class User extends BaseUser
      *
      * @ORM\Column(type="string", length=255, nullable=true)
      */
+    private $occupation;
+    /**
+     * @var string
+     *
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
     private $movie;
 
     /**
@@ -288,5 +294,29 @@ class User extends BaseUser
     public function getHobby()
     {
         return $this->hobby;
+    }
+
+    /**
+     * Set occupation
+     *
+     * @param string $occupation
+     *
+     * @return User
+     */
+    public function setOccupation($occupation)
+    {
+        $this->occupation = $occupation;
+
+        return $this;
+    }
+
+    /**
+     * Get occupation
+     *
+     * @return string
+     */
+    public function getOccupation()
+    {
+        return $this->occupation;
     }
 }
