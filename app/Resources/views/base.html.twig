@@ -5,6 +5,7 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+	    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
         <script src="{{ asset('/assets/build/vendor.js', 'webpack') }}"></script>
         <script src="{{ asset('/assets/build/main.js', 'webpack') }}"></script>
         {#{% if use_webpack_dev_server %}
@@ -20,9 +21,9 @@
 			
 			<div class="row">
 		
-				<div class="header-logo three columns">
+				<div class="three columns">
 					
-					<div id="logo"><a href="index.html" title="Golden"><img src="/assets/img/golden_header_logo.png" width="62" height="62" alt="Header Logo" /></a></div>
+					<div id="logo" class="logo31"><a href="/" title="treinta3y1uno">treinta3y1uno</a></div>
 				  	
 				</div>
 				
@@ -32,21 +33,24 @@
 
 		<section id="content-slider">
 		
-			<div class="row">
-			
-		  		<div class="text-center">
+		  		<div id="main-slider" class="flexslider31">
 				    
 				    <ul class="slides">
 				    
-				        <li><img src="/assets/img/basterds.jpg" alt="" />
+				        <li><a href=""><img class="img-responsive" src="/assets/img/basterdsBW.jpg" alt="" /></a>
+				        	<div class="flex-caption">
+					        	<div class="details">
+					        		<h1 class="flex-title"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br /><span>La última noche... del año</span></h1>
+					        		<p> </p>
+					        		<a class="read-more-btn" href="about-us.html">Entrar &rarr;</a>
+					        	</div>
+					        </div>
 				        </li>
 				        
 				    </ul><!-- end .slides -->
 		  		
 		  		</div><!-- end #main-slider -->
 			
-			</div><!-- end .row -->
-		
 		</section><!-- end #content-slider -->
 		
 		<section id="introduction">
@@ -84,30 +88,21 @@
 		
 				<div class="one-third column">
 				
-					<h3>Location</h3>
+					<h3>Localización</h3>
 					
-					<p>10 Columbus Circle, New York,<br />
-					NY 10019, United States</p>
+					<p>Club Foster's<br />
+					Santa Eulalia, Murcia</p>
 				
 				</div>
 				
 				<div class="one-third column">
 				
-					<h3>Contact</h3>
+					<h3>Contacto</h3>
 					
-					<p>(212) 823-6000<br />
-					<a href="">sayhello@golden.com</a></p>
+					<p>nochevieja31@gmail.com</p>
 				
 				</div>
 				
-				<div class="one-third column">
-				
-					<h3>Project Enquiries</h3>
-					
-					<p>We'd love to hear about your latest project. Please <a href="">get in touch</a> with us today.</p>
-				
-				</div>
-		
 			</div><!-- end .container -->
 		
 		</div><!-- end #contact-details -->
@@ -116,7 +111,7 @@
 	
 			<div class="sixteen columns">
 		  	  
-	  			<p id="copyright-details">&copy; 2012 Golden. All rights reserved. Designed by GuuThemes.</p>
+	  			<p id="copyright-details">&copy;2016. Treinta3y1Uno</p>
 	  		
 	  		</div>	  
 		  	

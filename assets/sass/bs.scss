@@ -1,2 +1,25 @@
 @import "variables.scss";
 @import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+#logo.logo31 {
+    padding-top: 6px;
+	font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    text-transform: none;
+    a{
+        text-decoration: none;    
+        color: #000;
+    }
+    a:hover {
+        color: #000;
+    }
+}
+
+#main-slider.flexslider31 {
+    margin-bottom: 20px;
+    position: relative;
+    img {
+        border-bottom: 3px solid #333;
+    }
+}
