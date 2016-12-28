@@ -6,3 +6,10 @@ InfiltradosBundle\Entity\User:
         name: Victoria
         surname: Quirante
         enabled: 1
+    user{2..20}:
+        email: <email()>
+        username: <email()>
+        plainPassword: 123456
+        name: <firstName()>
+        surname: <lastName()>
+        enabled: 1

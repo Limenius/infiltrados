@@ -29,11 +29,13 @@
 
 				<nav id="header-navigation" class="thirteen columns" role="navigation">
 					
+                    {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
 					<ul id="navigation">
 						<li><a href="{{ path('homepage') }}" title="Home">Home</a></li>
 						<li><a href="{{ path('edit_profile') }}" title="Contact">Mi perfil</a></li>
 						<li><a href="{{ path('homepage') }}" title="Contact">Invitados</a></li>
 					</ul><!-- end #navigation -->
+                    {% endif %}
 				
 				</nav><!-- end #header-navigation -->
 				
