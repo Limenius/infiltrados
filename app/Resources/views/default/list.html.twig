@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<div class="container">
+    <div id="form-wrapper" class="row">
+        <div id="recent-news">
+        {% for user in users %}
+	    	<article class="homepage one-third column">
+	    		
+	    		<div class="thumbnail">
+	    			<img src="/assets/img/blog_thumb_placeholder.png" alt="" />
+	    		</div>
+	    		
+                <h3><a href="blog-single.html">{{ user.name }} {{ user.surname }}</a></h3>
+	    		
+	    		<div class="meta">
+	    			<p>Posted in - <a href="">General News</a><br />on <strong>30th December</strong> 2012
+	    			<span><i class="icon-comment"></i> <a href="">6 Comments</a></span>
+	    			</p>
+	    		</div>
+	    		
+	    		<p>He was going on with some wild reminiscences about his tomahawk-pipe, which, it seemed, had in its two uses both brained his foes and soothed his soul, when we were directly attracted to.</p>
+	    		
+	    		<a class="read-more-btn" href="blog-single.html">Identificar &rarr;</a>
+	    	
+	    	</article><!-- end article -->
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

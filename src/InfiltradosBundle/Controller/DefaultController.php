@@ -21,6 +21,18 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/list", name="list")
+     */
+    public function listAction()
+    {
+        $users = $this->getDoctrine()->getRepository('InfiltradosBundle:User')->findAll();
+
+        return $this->render(':default:list.html.twig', [
+            'users' => $users,
+        ]);
+    }
+
+    /**
      * @Route("/edit-profile", name="edit_profile")
      */
     public function editProfileAction(Request $request)
