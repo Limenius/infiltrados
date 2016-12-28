@@ -1,10 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
+<div class="container">
     {{ form_start(form) }}
-    <h1>Edit profile</h1>
-    <div class="row">
-        <div class="col-md-12">
+    <div id="form-wrapper" class="row">
+        <div class="col-md-12 text-center">
+            <h1>MI PERFIL</h1>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
             {{ form_row(form.name) }}
             {{ form_row(form.surname) }}
             {{ form_row(form.movie) }}
@@ -13,10 +16,9 @@
             {{ form_row(form.book) }}
             {{ form_row(form.sport) }}
             {{ form_row(form.hobby) }}
+            <input class="btn btn-primary btn-lg" type="submit" value="Save" />
         </div>
     </div>
-    <div class="text-center">
-        <input class="btn btn-primary btn-lg" type="submit" value="Save" />
-    </div>
     {{ form_end(form) }}
+</div>
 {% endblock content %}
