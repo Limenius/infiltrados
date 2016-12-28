@@ -45,14 +45,15 @@
         <p></p>
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <select>
+                <label for="nombre">Nombre</label>
+                <select id="identiselect">
+                    <option></option>
                     {% for user in users %}
                     <option value="{{user.id}}">{{user.name}} {{user.surname}}</option>
                     {% endfor %}
                 <select>
               </div>
-              <a class="read-more-btn" href="javascript:void(0);">Identificar</a>
+              <a class="read-more-btn" id="doIdentify" href="javascript:void(0);">Identificar</a>
             </form>
       </div>
       <div class="modal-footer">
