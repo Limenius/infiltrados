@@ -23,3 +23,20 @@
         border-bottom: 3px solid #333;
     }
 }
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+input {
+    width: 100% !important;
+}
+
+#form-wrapper {
+    min-height: 600px;
+    .h1 {
+        padding-top: 70px !important;
+        padding-bottom: 30px !important;
+    }
+}

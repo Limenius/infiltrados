@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    {% trans_default_domain 'FOSUserBundle' %}
+
+
+    <div id="form-wrapper" class="row">
+        <div class="col-md-12">
+            <div class="h1 text-center">Entra con tu email y contraseña</div>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <form action="{{ path("fos_user_security_check") }}" method="post">
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
+
+                <label for="username">Email</label>
+                <input class="form-control" type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+
+                <label for="password">Contraseña</label>
+                <input class="form-control" type="password" id="password" name="_password" required="required" />
+
+                <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                <label for="remember_me">Entrar</label>
+                {% if error %}
+                <div class="form-error">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+
+                <div>
+                    <input class="btn btn-block btn-primary" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
