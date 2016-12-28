@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="container">
+    <div id="form-wrapper" class="row">
+        <div class="col-md-12 alert alert-info">
+            <p>
+            {{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime}) }}
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
