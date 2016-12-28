@@ -2930,6 +2930,7 @@ ul.tabs li.active{
 
 	#header-navigation[role="navigation"] li a {
 		padding: 5px 15px;
+	    cursor: pointer;
 	}
 	
 	.four.columns h2 {
@@ -3009,8 +3010,11 @@ ul.tabs li.active{
 		text-align: center;
 	}
 	
+	#header-navigation[role="navigation"] {
+		text-align: center;
+	}
+
 	#header-navigation[role="navigation"] ul {
-		display: none;
 	}
 	
 	.selectnav {
