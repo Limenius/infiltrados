@@ -4,28 +4,61 @@
 <div class="container">
     <div id="form-wrapper" class="row">
         <div id="recent-news">
+            <script>
+            var identifier = new Identifier();
+            </script>
         {% for user in users %}
-	    	<article class="homepage one-third column">
-	    		
-	    		<div class="thumbnail">
-	    			<img src="/assets/img/blog_thumb_placeholder.png" alt="" />
-	    		</div>
-	    		
+        <article class="homepage one-third column" userId="{{user.id}}">
+                <script>
+                identifier.addUser({{user.id}});
+                </script>
+
+                <div class="thumbnail">
+                    <img src="/assets/img/blog_thumb_placeholder.png" alt="" />
+                </div>
+
                 <h3><a href="blog-single.html">{{ user.name }} {{ user.surname }}</a></h3>
-	    		
-	    		<div class="meta">
-	    			<p>Posted in - <a href="">General News</a><br />on <strong>30th December</strong> 2012
-	    			<span><i class="icon-comment"></i> <a href="">6 Comments</a></span>
-	    			</p>
-	    		</div>
-	    		
-	    		<p>He was going on with some wild reminiscences about his tomahawk-pipe, which, it seemed, had in its two uses both brained his foes and soothed his soul, when we were directly attracted to.</p>
-	    		
-	    		<a class="read-more-btn" href="blog-single.html">Identificar &rarr;</a>
-	    	
-	    	</article><!-- end article -->
+
+                <div class="meta">
+                    <p>Posted in - <a href="">General News</a><br />on <strong>30th December</strong> 2012
+                    <span><i class="icon-comment"></i> <a href="">6 Comments</a></span>
+                    </p>
+                </div>
+
+                <p>He was going on with some wild reminiscences about his tomahawk-pipe, which, it seemed, had in its two uses both brained his foes and soothed his soul, when we were directly attracted to.</p>
+
+                <a class="read-more-btn" href="javascript:void(0);">Identificar &rarr;</a>
+
+            </article><!-- end article -->
         {% endfor %}
         </div>
     </div>
 </div>
+<div class="modal fade" id="identifyModal" role="dialog" style="overflow:hidden;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Identificar</h4>
+      </div>
+      <div class="modal-body">
+        <p></p>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <select>
+                    {% for user in users %}
+                    <option value="{{user.id}}">{{user.name}} {{user.surname}}</option>
+                    {% endfor %}
+                <select>
+              </div>
+              <a class="read-more-btn" href="javascript:void(0);">Identificar</a>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 {% endblock content %}
