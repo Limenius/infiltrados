@@ -21,9 +21,9 @@
                 </div>
 
                 {% if userStatus.status == 'hidden' or userStatus.status == 'failed' %}
-                <h3><a href="blog-single.html">*********** &nbsp; ***********</a></h3>
+                <h3>*********** &nbsp; ***********</h3>
                 {% elseif userStatus.status == 'matched' %}
-                <h3><a href="blog-single.html">{{ userStatus.suspect.name }} {{ userStatus.suspect.surname }}</a></h3>
+                <h3>{{ userStatus.suspect.name }} {{ userStatus.suspect.surname }}</h3>
                 {% endif %}
 
                 <p>{{ userStatus.suspect.occupation }}</p>
