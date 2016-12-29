@@ -71,13 +71,6 @@ class User extends BaseUser
      *
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $song;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
     private $band;
 
     /**
@@ -95,6 +88,19 @@ class User extends BaseUser
     private $hobby;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $zodiac;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(type="boolean")
+     */
+    private $isSpy;
+    /**
      * @ORM\OneToMany(targetEntity="UserStatus", mappedBy="player", cascade={"persist", "remove"})
      */
     private $guestsInfo;
@@ -102,7 +108,8 @@ class User extends BaseUser
     public function __construct()
     {
         parent::__construct();
-        // your own logic
+
+        $this->isSpy = false;
     }
 
     /**
@@ -209,30 +216,6 @@ class User extends BaseUser
     public function getBook()
     {
         return $this->book;
-    }
-
-    /**
-     * Set song
-     *
-     * @param string $song
-     *
-     * @return User
-     */
-    public function setSong($song)
-    {
-        $this->song = $song;
-
-        return $this;
-    }
-
-    /**
-     * Get song
-     *
-     * @return string
-     */
-    public function getSong()
-    {
-        return $this->song;
     }
 
     /**
@@ -380,6 +363,18 @@ class User extends BaseUser
     }
 
     /**
+     * Set zodiac
+     *
+     * @param string $zodiac
+     *
+     * @return User
+     */
+    public function setZodiac($zodiac)
+    {
+        $this->zodiac = $zodiac;
+    }
+
+    /**
      * Get token
      *
      * @return string
@@ -387,5 +382,39 @@ class User extends BaseUser
     public function getToken()
     {
         return $this->token;
+    }
+
+    /**
+     * Get zodiac
+     *
+     * @return string
+     */
+    public function getZodiac()
+    {
+        return $this->zodiac;
+    }
+
+    /**
+     * Set isSpy
+     *
+     * @param boolean $isSpy
+     *
+     * @return User
+     */
+    public function setIsSpy($isSpy)
+    {
+        $this->isSpy = $isSpy;
+
+        return $this;
+    }
+
+    /**
+     * Get isSpy
+     *
+     * @return boolean
+     */
+    public function getIsSpy()
+    {
+        return $this->isSpy;
     }
 }

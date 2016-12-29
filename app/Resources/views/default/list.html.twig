@@ -26,9 +26,10 @@
                 <h3>{{ userStatus.suspect.name }} {{ userStatus.suspect.surname }}</h3>
                 {% endif %}
 
-                <p>{{ userStatus.suspect.occupation }}</p>
-                <p>{{ userStatus.suspect.sport }}</p>
-                <p>{{ userStatus.suspect.movie }}</p>
+                {% set data = [userStatus.suspect.occupation, userStatus.suspect.movie, userStatus.suspect.sport, userStatus.suspect.band, userStatus.suspect.zodiac, userStatus.suspect.book, userStatus.suspect.hobby ] %}
+                {% for item in data|shuffle|slice(0, 3) %}
+                    <p>{{ item }}</p>
+                {% endfor %}
 
                 <a class="read-more-btn" href="javascript:void(0);">Identificar &rarr;</a>
 

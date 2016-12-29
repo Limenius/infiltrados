@@ -10,6 +10,10 @@ InfiltradosBundle\Entity\User:
         sport: Fútbol
         movie: Inglorious Basterds
         token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
     user{2..20}:
         email: <email()>
         username: <email()>
@@ -21,6 +25,10 @@ InfiltradosBundle\Entity\User:
         sport: Fútbol
         movie: Inglorious Basterds
         token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
 
 InfiltradosBundle\Entity\UserStatus:
     userStatus{2..20}:

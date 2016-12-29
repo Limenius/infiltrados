@@ -22,13 +22,13 @@ class ProfileType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('occupation', TextType::class, ['label' => 'Ocupación'])
-            ->add('movie', TextType::class, ['label' => 'Película'])
-            ->add('song', TextType::class, ['label' => 'Canción'])
-            ->add('band', TextType::class, ['label' => 'Grupo'])
-            ->add('book', TextType::class, ['label' => 'Libro'])
-            ->add('sport', TextType::class, ['label' => 'Deporte'])
-            ->add('hobby', TextType::class, ['label' => 'Hobby'])
+            ->add('occupation', TextType::class, ['label' => '¿A qué te dedicas?'])
+            ->add('movie', TextType::class, ['label' => 'Una película que te guste mucho'])
+            ->add('book', TextType::class, ['label' => '¿Y un libro?'])
+            ->add('zodiac', TextType::class, ['label' => '¿Cuál es tu signo del zodiaco?'])
+            ->add('band', TextType::class, ['label' => 'Tu grupo de música favorito'])
+            ->add('sport', TextType::class, ['label' => '¿Y tu deporte?'])
+            ->add('hobby', TextType::class, ['label' => 'Algo que te guste hacer en tu tiempo libre'])
             ;
     }
 
