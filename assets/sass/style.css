@@ -797,7 +797,8 @@ textarea.error {
 @media only screen and (max-width: 767px) {
     
     .container { 
-    	width: 260px; 
+    	width: 360px; 
+        text-align: center;
     }
     
     .container .columns,
@@ -824,7 +825,7 @@ textarea.error {
     .container .sixteen.columns,
     .container .one-third.column,
     .container .two-thirds.column  { 
-    	width: 260px; 
+    	width: 360px; 
     }
 
     /* Offsets */
