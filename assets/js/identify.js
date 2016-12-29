@@ -18,16 +18,22 @@ class identify {
             }
             $("select").select2();
             $("#doIdentify").click(() => {
+
                 const selected = $('#identiselect').val();
                 const inModal = this.inModal;
-                console.log(`en modal de ${inModal}. Seleccionado ${selected}.`);
-                console.log(`${this.url}?statusId=${inModal}&token=${selected}`)
-                //$.get(`${this.url}?statusId=${inModal}&token=${selected}`,
-
+                $('#idmodalbody .submit-btn').addClass('hidden');
+                $('#idmodalbody .loading').removeClass('hidden');
                 $.get(this.url,
                     {statusId: inModal, token: selected},
                     (data) => {
-                        console.log(data);
+                        $('#idmodalbody .loading').addClass('hidden');
+                        if (data.identified) {
+                            $('#idmodalbody .result-success').removeClass('hidden');
+                            $('article[statusId='+this.inModal+'] .js-name').text(data.name);
+                        } else {
+                            $('#idmodalbody .result-fail').removeClass('hidden');
+                        }
+                        setTimeout(function() {location.reload()}, 5000);
                     }
                 );
             });

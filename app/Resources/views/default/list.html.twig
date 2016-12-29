@@ -21,7 +21,7 @@
                 </div>
 
                 {% if userStatus.status == 'hidden' or userStatus.status == 'failed' %}
-                <h3>*********** &nbsp; ***********</h3>
+                <h3 class="js-name">*********** &nbsp; ***********</h3>
                 {% elseif userStatus.status == 'matched' %}
                 <h3>{{ userStatus.suspect.name }} {{ userStatus.suspect.surname }}</h3>
                 {% endif %}
@@ -31,7 +31,9 @@
                     <p>{{ item }}</p>
                 {% endfor %}
 
+                {% if userStatus.status == 'hidden' %}
                 <a class="read-more-btn" href="javascript:void(0);">Identificar &rarr;</a>
+                {% endif %}
 
             </article><!-- end article -->
         {% endfor %}
@@ -45,19 +47,35 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Identificar</h4>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="idmodalbody">
         <p></p>
-            <form>
+            <form class="idform">
               <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <select id="identiselect">
                     <option></option>
-                    {% for userStatus in users|shuffle %}
+                    {% for userStatus in users %}
                     <option value="{{userStatus.suspect.token}}">{{userStatus.suspect.name}} {{userStatus.suspect.surname}}</option>
                     {% endfor %}
                 <select>
               </div>
-              <a class="read-more-btn" id="doIdentify" href="javascript:void(0);">Identificar</a>
+              <div class="submit-btn">
+                  <a class="read-more-btn" id="doIdentify" href="javascript:void(0);">Identificar</a>
+              </div>
+              <div class="loading hidden">
+                  <div class="sk-folding-cube">
+                      <div class="sk-cube1 sk-cube"></div>
+                      <div class="sk-cube2 sk-cube"></div>
+                      <div class="sk-cube4 sk-cube"></div>
+                      <div class="sk-cube3 sk-cube"></div>
+                  </div>
+              </div>
+              <div class="result result-success hidden">
+                  IDENTIFICACIÓN EXITOSA
+              </div>
+              <div class="result result-fail hidden">
+                  IDENTIFICACIÓN ERRÓNEA
+              </div>
             </form>
       </div>
       <div class="modal-footer">
