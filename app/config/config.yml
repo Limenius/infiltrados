@@ -46,6 +46,7 @@ twig:
     form_themes:
         #- ':form:fields.html.twig'
         - 'bootstrap_3_layout.html.twig'
+        - 'VichUploaderBundle:Form:fields.html.twig'
 
 # Doctrine Configuration
 doctrine:
@@ -83,3 +84,12 @@ fos_user:
         confirmation:
             enabled: true
 
+vich_uploader:
+    db_driver: orm
+    mappings:
+        avatar:
+            uri_prefix:         /avatars
+            upload_destination: '%kernel.root_dir%/../web/avatars'
+            namer:              vich_uploader.namer_uniqid
+            delete_on_update:   true
+            delete_on_remove:   true

@@ -16,4 +16,6 @@
 /web/bundles/
 /web/assets/
 /node_modules/
+/web/avatars/*
+!web/avatars/.gitkeep
 *~

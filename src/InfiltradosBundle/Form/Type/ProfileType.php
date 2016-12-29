@@ -16,12 +16,19 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Form\CallbackTransformer;
 use InfiltradosBundle\Entity\User;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class ProfileType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+
+            ->add('imageFile', VichImageType::class, [
+                'allow_delete' => false, // not mandatory, default is true
+                'download_link' => false, // not mandatory, default is true
+                'label' => 'Una foto tuya',
+            ])
             ->add('occupation', TextType::class, ['label' => '¿A qué te dedicas?'])
             ->add('movie', TextType::class, ['label' => 'Una película que te guste mucho'])
             ->add('book', TextType::class, ['label' => '¿Y un libro?'])
