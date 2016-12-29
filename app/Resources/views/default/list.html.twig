@@ -52,7 +52,7 @@
                 <label for="nombre">Nombre</label>
                 <select id="identiselect">
                     <option></option>
-                    {% for userStatus in users %}
+                    {% for userStatus in users|shuffle %}
                     <option value="{{userStatus.suspect.token}}">{{userStatus.suspect.name}} {{userStatus.suspect.surname}}</option>
                     {% endfor %}
                 <select>
