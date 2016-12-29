@@ -26,7 +26,7 @@ InfiltradosBundle\Entity\User:
         sport: Fútbol2
         movie: Inglorious Basterds2
         token: <uuid()>
-        band: Pulp1
+        band: Pulp2
         book: Hablemos de langostas2
         zodiac: Tauro2
         hobby: Jugar al fútbol2
@@ -737,7 +737,11 @@ InfiltradosBundle\Entity\User:
     #    hobby: Jugar al fútbol
 
 InfiltradosBundle\Entity\UserStatus:
-    userStatus{1..20}:
+    userStatus1-{1..20}:
         player: "@user1"
+        suspect: "@user<current()>"
+        status: hidden
+    userStatus2-{1..20}:
+        player: "@user2"
         suspect: "@user<current()>"
         status: hidden
