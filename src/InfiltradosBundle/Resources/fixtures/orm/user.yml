@@ -14,12 +14,686 @@ InfiltradosBundle\Entity\User:
         book: Hablemos de langostas
         zodiac: Tauro
         hobby: Jugar al fútbol
-    user{2..20}:
-        email: <email()>
-        username: <email()>
-        plainPassword: 123456
-        name: <firstName()>
-        surname: <lastName()>
+    user2:
+        username: 'daniel.lopez.m@gmail.com'
+        email: 'daniel.lopez.m@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user3:
+        username: 'nitram.ohcan@gmail.com'
+        email: 'nitram.ohcan@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user4:
+        username: 'laura.gonzalez.cano@gmail.com'
+        email: 'laura.gonzalez.cano@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user5:
+        username: 'txnicolas7gmail.com'
+        email: 'txnicola7gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user6:
+        username: 'luznietof@hotmail.com'
+        email: 'luznietof@hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user7:
+        username: 'esteespevi@msn.com'
+        email: 'esteespevi@msn.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user8:
+        username: 'jmanuel.lopezsanchez@gmail.com'
+        email: 'jmanuel.lopezsanchez@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user9:
+        username: 'anruizdo@gmail.com'
+        email: 'anruizdo@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user10:
+        username: 'mdpv84hotmail.com'
+        email: 'mdpv84hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user11:
+        username: 'rociosm83pipa@gmail.com'
+        email: 'rociosm83pipa@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user12:
+        username: 'f.j.ortega.manzanera@gmail.com'
+        email: 'f.j.ortega.manzanera@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user13:
+        username: 'edufres@hotmail.com'
+        email: 'edufres@hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user14:
+        username: 'antonioruiz@tadeus.es'
+        email: 'antonioruiz@tadeus.es'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user15:
+        username: 'mariajosefemo@gmail.com'
+        email: 'mariajosefemo@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user16:
+        username: 'guillermo.nicolas.m@gmail.com '
+        email: 'guillermo.nicolas.m@gmail.com '
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user17:
+        username: 'zaragozalopeza@gmail.com'
+        email: 'zaragozalopeza@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user18:
+        username: 'inmaarcemoreno@gmail.com'
+        email: 'inmaarcemoreno@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user19:
+        username: 'rocio.zaragoza.g@gmail.com'
+        email: 'rocio.zaragoza.g@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user20:
+        username: 'Ana_correo_5hotmail.com'
+        email: 'Ana_correo_5hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user21:
+        username: 'nereaespinosa@gmail.com'
+        email: 'nereaespinosa@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user22:
+        username: 'miriperezg@gmail.com'
+        email: 'miriperezg@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user23:
+        username: 'alvadito@hotmail.com'
+        email: 'alvadito@hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user24:
+        username: 'Laura.gonz3hotmail.com'
+        email: 'Laura.gonz3hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user25:
+        username: 'pedroandresnoguera@gmail.com'
+        email: 'pedroandresnoguera@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user26:
+        username: 'rachel.samper@hotmail.com'
+        email: 'rachel.samper@hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user27:
+        username: 'oldsixqiu@gmail.com'
+        email: 'oldsixqiu@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user28:
+        username: 'edu_af2hotmail.com'
+        email: 'edu_af2hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user29:
+        username: 'rafael.garrido90.rg@gmail.com'
+        email: 'rafael.garrido90.rg@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user30:
+        username: 'jaimeherraizm@gmail.com'
+        email: 'jaimeherraizm@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user31:
+        username: 'carolinacarilla@gmail.com'
+        email: 'carolinacarilla@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user32:
+        username: 'calarcon2305hotmail.com'
+        email: 'calarcon2305hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user33:
+        username: 'anabelmoraleda@gmail.com'
+        email: 'anabelmoraleda@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user34:
+        username: 'rperezllorca@gmail.com'
+        email: 'rperezllorca@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user35:
+        username: 'paco.campoch@gmail.com'
+        email: 'paco.campoch@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user36:
+        username: 'ricardonoguemar@hotmail.com'
+        email: 'ricardonoguemar@hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user37:
+        username: 'j.s.ros@outlook.com'
+        email: 'j.s.ros@outlook.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user38:
+        username: 'teresa.marin.carrasco@gmail.com'
+        email: 'teresa.marin.carrasco@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user39:
+        username: 'fede.aliaga@gmail.com'
+        email: 'fede.aliaga@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user40:
+        username: 'marta.b.r@hotmail.com'
+        email: 'marta.b.r@hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user41:
+        username: 'antoniorme@gmail.com'
+        email: 'antoniorme@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user42:
+        username: 'eliandaghoum@gmail.com'
+        email: 'eliandaghoum@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user43:
+        username: 'jaime.darky@gmail.com'
+        email: 'jaime.darky@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user44:
+        username: 'luismrodriguezef@gmail.com'
+        email: 'luismrodriguezef@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user45:
+        username: 'jotaerre90hotmail.com'
+        email: 'jotaerre90hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user46:
+        username: 'enrike_mf@hotmail.com'
+        email: 'enrike_mf@hotmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user47:
+        username: 'guillermo.artigao@gmail.com'
+        email: 'guillermo.artigao@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user48:
+        username: 'jalbarracinq@gmail.com'
+        email: 'jalbarracinq@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user49:
+        username: 'olisovol@gmail.com'
+        email: 'olisovol@gmail.com'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user50:
+        username: mariamoyasanchez@gmail.com
+        email: mariamoyasanchez@gmail.com
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user51:
+        username: maricruz_moya@hotmail.com
+        email: maricruz_moya@hotmail.com
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user52:
+        username: angel.jesus.1504gmail.com
+        email: angel.jesus.150mail.com
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user53:
+        username: jesusnc90gmail.com
+        email: jesusnc90gmail.com
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user54:
+        username: fakemfcb84gmail.com
+        email: fakemfcb84gmail.com
+        plainPassword: 999999
         enabled: 1
         occupation: Software Developer
         sport: Fútbol
