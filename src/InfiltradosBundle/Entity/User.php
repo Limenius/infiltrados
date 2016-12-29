@@ -112,6 +112,11 @@ class User extends BaseUser
         $this->isSpy = false;
     }
 
+    public function getFullName()
+    {
+        return $this->name . ' ' . $this->surname;
+    }
+
     /**
      * Get id
      *

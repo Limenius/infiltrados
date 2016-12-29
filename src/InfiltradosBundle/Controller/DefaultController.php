@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use InfiltradosBundle\Form\Type\ProfileType;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class DefaultController extends Controller
 {
@@ -79,11 +80,18 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         if ($identified) {
             $userStatus->setStatus('matched');
+            $response = [
+                'identified' => true,
+                'name' => $userStatus->getSuspect()->getFullName(),
+                ];
         } else {
             $userStatus->setStatus('failed');
+            $response = [
+                'identified' => false,
+                ];
         }
         $em->persist($userStatus);
         $em->flush();
-        return new Response($identified ? 'true' : 'false');
+        return new JsonResponse($response);
     }
 }

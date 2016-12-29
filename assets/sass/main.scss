@@ -1,3 +1,28 @@
 @import "flexslider.css";
 @import "style.css";
 @import "fancybox.css";
+@import "~spinkit/scss/spinners/11-folding-cube.scss";
+
+.idform {
+    text-align: center;
+    .submit-btn {
+        margin: 5px 0;
+    }
+    .loading {
+        .sk-cube {
+            &:before {
+                background-color: #e15154;
+            }
+        }
+    }
+    .result {
+        font-size: 18px;
+        font-family: "Oswald";
+        &.result-success {
+            color: #080;
+        }
+        &.result-fail {
+            color: #800;
+        }
+    }
+}
