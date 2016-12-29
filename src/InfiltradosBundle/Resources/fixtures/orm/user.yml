@@ -6,15 +6,32 @@ InfiltradosBundle\Entity\User:
         name: Victoria
         surname: Quirante
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
+        occupation: Software Developer1
+        sport: Fútbol1
+        movie: Inglorious Basterds1
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
-    user{2..20}:
+        band: Pulp1
+        book: Hablemos de langostas1
+        zodiac: Tauro1
+        hobby: Jugar al fútbol1
+        isSpy: 1
+    user2:
+        email: 'nitram.ohcan@gmail.com'
+        username: 'nitram.ohcan@gmail.com'
+        plainPassword: 123456
+        name: Victoria
+        surname: Quirante
+        enabled: 1
+        occupation: Software Developer2
+        sport: Fútbol2
+        movie: Inglorious Basterds2
+        token: <uuid()>
+        band: Pulp1
+        book: Hablemos de langostas2
+        zodiac: Tauro2
+        hobby: Jugar al fútbol2
+        isSpy: 1
+    user{3..20}:
         email: <email()>
         username: <email()>
         plainPassword: 123456
