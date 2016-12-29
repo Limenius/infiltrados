@@ -9,6 +9,10 @@ InfiltradosBundle\Entity\User:
         occupation: Software Developer
         sport: Fútbol
         movie: Inglorious Basterds
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
     user{2..20}:
         email: <email()>
         username: <email()>
@@ -19,6 +23,10 @@ InfiltradosBundle\Entity\User:
         occupation: Software Developer
         sport: Fútbol
         movie: Inglorious Basterds
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
 
 InfiltradosBundle\Entity\UserStatus:
     userStatus{2..20}:
