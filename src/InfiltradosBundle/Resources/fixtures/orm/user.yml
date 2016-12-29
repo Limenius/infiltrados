@@ -6,6 +6,9 @@ InfiltradosBundle\Entity\User:
         name: Victoria
         surname: Quirante
         enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
     user{2..20}:
         email: <email()>
         username: <email()>
@@ -13,3 +16,6 @@ InfiltradosBundle\Entity\User:
         name: <firstName()>
         surname: <lastName()>
         enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
