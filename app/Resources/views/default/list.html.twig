@@ -17,7 +17,15 @@
                 </script>
 
                 <div class="thumbnail">
+                    {% if userStatus.status == 'hidden' or userStatus.status == 'failed' %}
                     <img src="/assets/img/blog_thumb_placeholder.png" alt="" />
+                    {% else %}
+                        {% if userStatus.suspect.imageName %}
+                        <img src="{{ vich_uploader_asset(userStatus.suspect, 'avatar' ) }}" />
+                        {% else %}
+                        <img src="/assets/img/blog_thumb_placeholder.png" alt="" />
+                        {% endif %}
+                    {% endif %}
                 </div>
 
                 {% if userStatus.status == 'hidden' or userStatus.status == 'failed' %}
