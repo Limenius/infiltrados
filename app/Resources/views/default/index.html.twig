@@ -13,7 +13,11 @@
 					        	<div class="details">
 					        		<h1 class="flex-title"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br /><span>La última noche... del año</span></h1>
 					        		<p> </p>
-                                    <a class="read-more-btn" href="{{ path('fos_user_security_login') }}">Entrar &rarr;</a>
+                                    {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                                    <a class="read-more-btn btn-big" href="{{ path('list') }}">Lista de invitados &rarr;</a>
+                                    {% else %}
+                                    <a class="read-more-btn btn-big" href="{{ path('fos_user_security_login') }}">Entrar &rarr;</a>
+                                    {% endif %}
 					        	</div>
 					        </div>
 				        </li>
