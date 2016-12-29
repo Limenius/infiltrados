@@ -720,7 +720,7 @@ InfiltradosBundle\Entity\User:
     #    hobby: Jugar al fútbol
 
 InfiltradosBundle\Entity\UserStatus:
-    userStatus{2..20}:
+    userStatus{1..20}:
         player: "@user1"
         suspect: "@user<current()>"
         status: hidden
