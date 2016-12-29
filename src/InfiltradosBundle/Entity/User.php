@@ -87,6 +87,10 @@ class User extends BaseUser
      */
     private $hobby;
 
+    /**
+     * @ORM\OneToMany(targetEntity="UserStatus", mappedBy="player", cascade={"persist", "remove"})
+     */
+    private $guestsInfo;
 
     public function __construct()
     {

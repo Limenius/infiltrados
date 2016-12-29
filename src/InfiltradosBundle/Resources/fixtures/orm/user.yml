@@ -19,3 +19,9 @@ InfiltradosBundle\Entity\User:
         occupation: Software Developer
         sport: Fútbol
         movie: Inglorious Basterds
+
+InfiltradosBundle\Entity\UserStatus:
+    userStatus{2..20}:
+        player: "@user1"
+        suspect: "@user<current()>"
+        status: hidden
