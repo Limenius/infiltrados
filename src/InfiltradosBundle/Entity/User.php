@@ -323,4 +323,38 @@ class User extends BaseUser
     {
         return $this->occupation;
     }
+
+    /**
+     * Add guestsInfo
+     *
+     * @param \InfiltradosBundle\Entity\UserStatus $guestsInfo
+     *
+     * @return User
+     */
+    public function addGuestsInfo(\InfiltradosBundle\Entity\UserStatus $guestsInfo)
+    {
+        $this->guestsInfo[] = $guestsInfo;
+
+        return $this;
+    }
+
+    /**
+     * Remove guestsInfo
+     *
+     * @param \InfiltradosBundle\Entity\UserStatus $guestsInfo
+     */
+    public function removeGuestsInfo(\InfiltradosBundle\Entity\UserStatus $guestsInfo)
+    {
+        $this->guestsInfo->removeElement($guestsInfo);
+    }
+
+    /**
+     * Get guestsInfo
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getGuestsInfo()
+    {
+        return $this->guestsInfo;
+    }
 }

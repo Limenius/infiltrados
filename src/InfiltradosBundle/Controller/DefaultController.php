@@ -25,7 +25,8 @@ class DefaultController extends Controller
      */
     public function listAction()
     {
-        $users = $this->getDoctrine()->getRepository('InfiltradosBundle:User')->findAll();
+        $user = $this->getUser();
+        $users = $user->getGuestsInfo();
 
         return $this->render(':default:list.html.twig', [
             'users' => $users,

@@ -10,21 +10,25 @@
             <script>
             var identifier = new Identifier();
             </script>
-        {% for user in users %}
-        <article class="homepage one-third column" userId="{{user.id}}">
+        {% for userStatus in users %}
+        <article class="homepage one-third column" userId="{{userStatus.suspect.id}}">
                 <script>
-                identifier.addUser({{user.id}});
+                identifier.addUser({{userStatus.suspect.id}});
                 </script>
 
                 <div class="thumbnail">
                     <img src="/assets/img/blog_thumb_placeholder.png" alt="" />
                 </div>
 
+                {% if userStatus.status == 'hidden' or userStatus.status == 'failed' %}
                 <h3><a href="blog-single.html">*********** &nbsp; ***********</a></h3>
+                {% elseif userStatus.status == 'matched' %}
+                <h3><a href="blog-single.html">{{ userStatus.suspect.name }} {{ userStatus.suspect.surname }}</a></h3>
+                {% endif %}
 
-                <p>{{ user.occupation }}</p>
-                <p>{{ user.sport }}</p>
-                <p>{{ user.movie }}</p>
+                <p>{{ userStatus.suspect.occupation }}</p>
+                <p>{{ userStatus.suspect.sport }}</p>
+                <p>{{ userStatus.suspect.movie }}</p>
 
                 <a class="read-more-btn" href="javascript:void(0);">Identificar &rarr;</a>
 
@@ -47,8 +51,8 @@
                 <label for="nombre">Nombre</label>
                 <select id="identiselect">
                     <option></option>
-                    {% for user in users %}
-                    <option value="{{user.id}}">{{user.name}} {{user.surname}}</option>
+                    {% for userStatus in users %}
+                    <option value="{{userStatus.suspect.id}}">{{userStatus.suspect.name}} {{userStatus.suspect.surname}}</option>
                     {% endfor %}
                 <select>
               </div>
