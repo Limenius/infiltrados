@@ -8,12 +8,12 @@
         </div>
         <div id="recent-news">
             <script>
-            var identifier = new Identifier();
+            var identifier = new Identifier('{{url('identify')}}');
             </script>
         {% for userStatus in users %}
-        <article class="homepage one-third column" userId="{{userStatus.suspect.id}}">
+        <article class="homepage one-third column" statusId="{{userStatus.id}}">
                 <script>
-                identifier.addUser({{userStatus.suspect.id}});
+                identifier.addUser({{userStatus.id}});
                 </script>
 
                 <div class="thumbnail">
@@ -52,7 +52,7 @@
                 <select id="identiselect">
                     <option></option>
                     {% for userStatus in users %}
-                    <option value="{{userStatus.suspect.id}}">{{userStatus.suspect.name}} {{userStatus.suspect.surname}}</option>
+                    <option value="{{userStatus.suspect.token}}">{{userStatus.suspect.name}} {{userStatus.suspect.surname}}</option>
                     {% endfor %}
                 <select>
               </div>

@@ -28,6 +28,13 @@ class User extends BaseUser
     /**
      * @var string
      *
+     * @ORM\Column(type="string", length=255)
+     */
+    private $token;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="name", type="string", length=255, nullable=true)
      */
     private $name;
@@ -356,5 +363,29 @@ class User extends BaseUser
     public function getGuestsInfo()
     {
         return $this->guestsInfo;
+    }
+
+    /**
+     * Set token
+     *
+     * @param string $token
+     *
+     * @return User
+     */
+    public function setToken($token)
+    {
+        $this->token = $token;
+
+        return $this;
+    }
+
+    /**
+     * Get token
+     *
+     * @return string
+     */
+    public function getToken()
+    {
+        return $this->token;
     }
 }

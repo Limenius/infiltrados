@@ -16,7 +16,7 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-    
+
         return $this->render(':default:index.html.twig');
     }
 
@@ -64,5 +64,26 @@ class DefaultController extends Controller
             'form' => $form->createView(),
             'user' => $user,
         ));
+    }
+
+    /**
+     * @Route("/identify", name="identify")
+     */
+    public function identifyAction(Request $request)
+    {
+        $user = $this->getUser();
+        $userStatus = $this->getDoctrine()
+            ->getRepository('InfiltradosBundle:UserStatus')
+            ->find($request->query->get('statusId'));
+        $identified = ($userStatus->getSuspect()->getToken() == $request->query->get('token'));
+        $em = $this->getDoctrine()->getManager();
+        if ($identified) {
+            $userStatus->setStatus('matched');
+        } else {
+            $userStatus->setStatus('failed');
+        }
+        $em->persist($userStatus);
+        $em->flush();
+        return new Response($identified ? 'true' : 'false');
     }
 }

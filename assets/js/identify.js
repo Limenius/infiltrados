@@ -1,17 +1,18 @@
 require('select2');
 
 class identify {
-    constructor () {
-        this.userIds = [];
+    constructor (url) {
+        this.statusIds = [];
         this.setupEvents();
         this.inModal = null;
+        this.url = url;
     }
 
     setupEvents () {
         $().ready(() => {
-            for (let id of this.userIds) {
-                $('article[userId='+id+'] .read-more-btn').click((evt) => {
-                    this.inModal = $(evt.target).parents('article').attr('userId');
+            for (let id of this.statusIds) {
+                $('article[statusId='+id+'] .read-more-btn').click((evt) => {
+                    this.inModal = $(evt.target).parents('article').attr('statusId');
                     $('#identifyModal').modal()
                 });
             }
@@ -20,12 +21,22 @@ class identify {
                 const selected = $('#identiselect').val();
                 const inModal = this.inModal;
                 console.log(`en modal de ${inModal}. Seleccionado ${selected}.`);
+                console.log(`${this.url}?statusId=${inModal}&token=${selected}`)
+                //$.get(`${this.url}?statusId=${inModal}&token=${selected}`,
+
+                $.get(this.url,
+                    {statusId: inModal, token: selected},
+                    (data) => {
+                        console.log(data);
+                    }
+                );
             });
+
         });
     }
 
     addUser (id) {
-        this.userIds.push(id);
+        this.statusIds.push(id);
     }
 }
 

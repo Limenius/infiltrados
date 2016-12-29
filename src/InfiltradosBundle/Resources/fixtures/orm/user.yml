@@ -9,6 +9,7 @@ InfiltradosBundle\Entity\User:
         occupation: Software Developer
         sport: Fútbol
         movie: Inglorious Basterds
+        token: <uuid()>
     user{2..20}:
         email: <email()>
         username: <email()>
@@ -19,6 +20,7 @@ InfiltradosBundle\Entity\User:
         occupation: Software Developer
         sport: Fútbol
         movie: Inglorious Basterds
+        token: <uuid()>
 
 InfiltradosBundle\Entity\UserStatus:
     userStatus{2..20}:
