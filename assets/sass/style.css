@@ -794,10 +794,11 @@ textarea.error {
 
 /* Note: Design for a width of 320px */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1023px) {
     
     .container { 
     	width: 80%; 
+        text-align: center;
     }
     
     .container .columns,
@@ -1250,13 +1251,13 @@ a.back-to-top-link span {
 --------------------------------------------------*/
 
 a.read-more-btn {
-    line-height: 30px;
+    line-height: 50px;
 	background-color: #e15154;
 	border-bottom: none!important;
 	color: #fff;
 	display: inline-block;
 	font-family: 'Oswald', sans-serif; /* This theme uses Google Web Fonts. To change this font, go to http://www.google.com/webfonts/ and follow the instructions there. */
-	font-size: 16px;
+	font-size: 35px;
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -3005,7 +3006,15 @@ ul.tabs li.active{
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 560px) {
+	.flex-title,
+	.flex-direction-nav a {
+		display: none !important;
+	}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 1023px) {
 
 	#header-global {
 		text-align: center;
@@ -3066,7 +3075,7 @@ ul.tabs li.active{
 	
 	.flex-title,
 	.flex-direction-nav a {
-		display: none!important;
+        font-size: 12px;
 	}
 	
 	#portfolio-filter li {
