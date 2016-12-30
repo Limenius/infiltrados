@@ -85,6 +85,9 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
     user_class: InfiltradosBundle\Entity\User
+    from_email:
+        address:        nochevieja31@gmail.com
+        sender_name:    "nochevieja31"
     registration:
         confirmation:
             enabled: true
