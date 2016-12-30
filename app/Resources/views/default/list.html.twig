@@ -21,7 +21,7 @@
                     <img src="/assets/img/blog_thumb_placeholder.png" alt="" />
                     {% else %}
                         {% if userStatus.suspect.imageName %}
-                        <img src="{{ vich_uploader_asset(userStatus.suspect, 'imageFile' ) }}" />
+                        <img src="{{ vich_uploader_asset(userStatus.suspect, 'imageFile' )|imagine_filter('my_thumb') }}" />
                         {% else %}
                         <img src="/assets/img/blog_thumb_placeholder.png" alt="" />
                         {% endif %}
