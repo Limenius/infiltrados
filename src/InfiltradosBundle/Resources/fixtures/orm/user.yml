@@ -736,12 +736,12 @@ InfiltradosBundle\Entity\User:
     #    zodiac: Tauro
     #    hobby: Jugar al fútbol
 
-InfiltradosBundle\Entity\UserStatus:
-    userStatus1-{1..20}:
-        player: "@user1"
-        suspect: "@user<current()>"
-        status: hidden
-    userStatus2-{1..20}:
-        player: "@user2"
-        suspect: "@user<current()>"
-        status: hidden
+    #InfiltradosBundle\Entity\UserStatus:
+    #    userStatus1-{1..20}:
+    #        player: "@user1"
+    #        suspect: "@user<current()>"
+    #        status: hidden
+    #    userStatus2-{1..20}:
+    #        player: "@user2"
+    #        suspect: "@user<current()>"
+    #        status: hidden
