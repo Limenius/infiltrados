@@ -29,6 +29,8 @@ class ProfileType extends AbstractType
                 'download_link' => false, // not mandatory, default is true
                 'label' => 'Una foto tuya',
             ])
+            ->add('name', TextType::class, ['label' => 'Nombre', 'disabled' => true])
+            ->add('surname', TextType::class, ['label' => 'Apellidos', 'disabled' => true])
             ->add('occupation', TextType::class, ['label' => '¿A qué te dedicas?'])
             ->add('movie', TextType::class, ['label' => 'Una película que te guste mucho'])
             ->add('book', TextType::class, ['label' => '¿Y un libro?'])

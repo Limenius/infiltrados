@@ -5,7 +5,7 @@
     {{ form_start(form) }}
     <div id="form-wrapper" class="row">
         <div class="col-md-12 text-center">
-            <h1>MI PERFIL</h1>
+            <h1>{{ app.user.name }} {{ app.user.surname }}</h1>
         </div>
         <div class="col-md-6 col-md-offset-3">
             {{ form_row(form.imageFile) }}
