@@ -794,7 +794,7 @@ textarea.error {
 
 /* Note: Design for a width of 320px */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
     
     .container { 
     	width: 360px; 
@@ -825,7 +825,7 @@ textarea.error {
     .container .sixteen.columns,
     .container .one-third.column,
     .container .two-thirds.column  { 
-    	width: 360px; 
+    	width: 100%; 
     }
 
     /* Offsets */
