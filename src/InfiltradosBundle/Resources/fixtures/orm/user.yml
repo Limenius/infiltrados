@@ -901,6 +901,21 @@ InfiltradosBundle\Entity\User:
         book: Hablemos de langostas
         zodiac: Tauro
         hobby: Jugar al fútbol
+    user55:
+        username: roy@nido.ai
+        email: roy@nido.ai
+        name: 'Roy'
+        surname: 'Petter Torgensen'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
 
     #InfiltradosBundle\Entity\UserStatus:
     #    userStatus1-{1..20}:
