@@ -2,6 +2,8 @@
 
 namespace InfiltradosBundle\Repository;
 
+use InfiltradosBundle\Entity\User;
+
 /**
  * UserRepository
  *
@@ -10,4 +12,30 @@ namespace InfiltradosBundle\Repository;
  */
 class UserRepository extends \Doctrine\ORM\EntityRepository
 {
+    //public function findAllWithCounts()
+    //{
+    //    $hidden = 'hidden';
+    //    $matched = 'matched';
+    //    $em = $this->getEntityManager();
+    //    $qb = $em->createQueryBuilder();
+    //    $qb->select('u')->from(User::class, 'u');
+    //    $qb->leftJoin('u.guestsInfo', 'i');
+    //    $qb->addSelect('COUNT(i.status) AS counthidden WITH i.status = :hidden');
+    //    $qb->setParameter('hidden', $hidden);
+    //    $qb->groupBy('u.id');
+
+    //    return $query = $qb->getQuery()->execute();
+    //}
+    
+    public function findAllSorted()
+    {
+        $em = $this->getEntityManager();
+        $qb = $em->createQueryBuilder();
+        $qb->select('u')->from(User::class, 'u');
+        $qb->orderBy('u.spiesIdentified', 'DESC');
+        $qb->addOrderBy('u.guestsIdentified', 'DESC');
+        $qb->addOrderBy('u.identificationsFailed', 'ASC');
+
+        return $query = $qb->getQuery()->execute();
+    }
 }

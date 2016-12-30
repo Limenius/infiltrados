@@ -35,6 +35,18 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/ranking", name="ranking")
+     */
+    public function rankingAction()
+    {
+        $users = $this->getDoctrine()->getRepository('InfiltradosBundle:User')->findAllSorted();
+
+        return $this->render(':default:ranking.html.twig', [
+            'users' => $users,
+        ]);
+    }
+
+    /**
      * @Route("/edit-profile", name="edit_profile")
      */
     public function editProfileAction(Request $request)
@@ -80,6 +92,13 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         if ($identified) {
             $userStatus->setStatus('matched');
+            if ($userStatus->getSuspect()->getIsSpy()) {
+                $spies = $user->getSpiesIdentified();
+                $user->setSpiesIdentified($spies + 1);
+            }
+            $guests = $user->getGuestsIdentified();
+            $user->setGuestsIdentified($guests + 1);
+            $em->persist($user);
             $response = [
                 'identified' => true,
                 'spy' => $userStatus->getSuspect()->getIsSpy(),
@@ -87,6 +106,9 @@ class DefaultController extends Controller
                 ];
         } else {
             $userStatus->setStatus('failed');
+            $failed = $user->getIdentificationsFailed();
+            $user->setGuestsIdentified($failed + 1);
+            $em->persist($user);
             $response = [
                 'spy' => $userStatus->getSuspect()->getIsSpy(),
                 'identified' => false,

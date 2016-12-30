@@ -131,12 +131,36 @@ class User extends BaseUser
      */
     private $updatedAt;
 
+    /**
+     * @var integer
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $spiesIdentified;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $guestsIdentified;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $identificationsFailed;
+
     public function __construct()
     {
         parent::__construct();
 
         $this->isSpy = false;
         $this->updatedAt = new \DateTime();
+        $this->spiesIdentified = 0;
+        $this->guestsIdentified = 0;
+        $this->identificationsFailed = 0;
     }
 
     public function getFullName()
@@ -528,5 +552,77 @@ class User extends BaseUser
     public function getUpdatedAt()
     {
         return $this->updatedAt;
+    }
+
+    /**
+     * Set spiesIdentified
+     *
+     * @param integer $spiesIdentified
+     *
+     * @return User
+     */
+    public function setSpiesIdentified($spiesIdentified)
+    {
+        $this->spiesIdentified = $spiesIdentified;
+
+        return $this;
+    }
+
+    /**
+     * Get spiesIdentified
+     *
+     * @return integer
+     */
+    public function getSpiesIdentified()
+    {
+        return $this->spiesIdentified;
+    }
+
+    /**
+     * Set guestsIdentified
+     *
+     * @param integer $guestsIdentified
+     *
+     * @return User
+     */
+    public function setGuestsIdentified($guestsIdentified)
+    {
+        $this->guestsIdentified = $guestsIdentified;
+
+        return $this;
+    }
+
+    /**
+     * Get guestsIdentified
+     *
+     * @return integer
+     */
+    public function getGuestsIdentified()
+    {
+        return $this->guestsIdentified;
+    }
+
+    /**
+     * Set identificationsFailed
+     *
+     * @param integer $identificationsFailed
+     *
+     * @return User
+     */
+    public function setIdentificationsFailed($identificationsFailed)
+    {
+        $this->identificationsFailed = $identificationsFailed;
+
+        return $this;
+    }
+
+    /**
+     * Get identificationsFailed
+     *
+     * @return integer
+     */
+    public function getIdentificationsFailed()
+    {
+        return $this->identificationsFailed;
     }
 }

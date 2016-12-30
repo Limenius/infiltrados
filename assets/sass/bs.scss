@@ -53,3 +53,15 @@ a.read-more-btn.btn-big {
         font-size: 1.2em;
     }
 }
+
+table#ranking {
+    width: 100%;
+    margin-top: 50px;
+    th {
+        font-weight: bold;
+    }
+}
+
+.red {
+    color: #e15154;
+}
