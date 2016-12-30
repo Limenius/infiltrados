@@ -33,7 +33,7 @@ monolog:
 #swiftmailer:
 #    delivery_address: me@example.com
 
-hautelook_alice:
-    fixtures_path: 'Resources/fixtures/orm'
+            #hautelook_alice:
+            #    fixtures_path: 'Resources/fixtures/orm'
 
 
