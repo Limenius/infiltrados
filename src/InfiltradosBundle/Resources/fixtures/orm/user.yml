@@ -19,8 +19,8 @@ InfiltradosBundle\Entity\User:
         email: 'nitram.ohcan@gmail.com'
         username: 'nitram.ohcan@gmail.com'
         plainPassword: 123456
-        name: Victoria
-        surname: Quirante
+        name: Nacho
+        surname: Martín Latorre
         enabled: 1
         occupation: Software Developer2
         sport: Fútbol2

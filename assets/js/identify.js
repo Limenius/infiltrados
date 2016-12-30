@@ -27,7 +27,10 @@ class identify {
                     {statusId: inModal, token: selected},
                     (data) => {
                         $('#idmodalbody .loading').addClass('hidden');
-                        if (data.identified) {
+                        if (data.identified && data.spy) {
+                            $('#idmodalbody .result-spy').removeClass('hidden');
+                            $('article[statusId='+this.inModal+'] .js-name').text(data.name);
+                        } else if (data.identified) {
                             $('#idmodalbody .result-success').removeClass('hidden');
                             $('article[statusId='+this.inModal+'] .js-name').text(data.name);
                         } else {

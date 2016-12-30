@@ -82,11 +82,13 @@ class DefaultController extends Controller
             $userStatus->setStatus('matched');
             $response = [
                 'identified' => true,
+                'spy' => $userStatus->getSuspect()->getIsSpy(),
                 'name' => $userStatus->getSuspect()->getFullName(),
                 ];
         } else {
             $userStatus->setStatus('failed');
             $response = [
+                'spy' => $userStatus->getSuspect()->getIsSpy(),
                 'identified' => false,
                 ];
         }

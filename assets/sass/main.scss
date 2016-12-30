@@ -18,8 +18,11 @@
     .result {
         font-size: 18px;
         font-family: "Oswald";
-        &.result-success {
+        &.result-spy {
             color: #080;
+        }
+        &.result-success {
+            color: #008;
         }
         &.result-fail {
             color: #800;
