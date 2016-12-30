@@ -854,10 +854,10 @@ textarea.error {
 
 /* Note: Design for a width of 480px */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/*@media only screen and (min-width: 480px) and (max-width: 767px) {
     
     .container { 
-    	width: 300px; 
+    	width: 480px; 
     }
     
     .container .columns,
@@ -884,11 +884,11 @@ textarea.error {
     .container .sixteen.columns,
     .container .one-third.column,
     .container .two-thirds.column { 
-    	width: 300px; 
+    	width: 480px; 
     }
 
 }
-
+*/
 /* Clearing (Clearfix)
 --------------------------------------------------*/
 
@@ -1251,6 +1251,7 @@ a.back-to-top-link span {
 --------------------------------------------------*/
 
 a.read-more-btn {
+    line-height: 30px;
 	background-color: #e15154;
 	border-bottom: none!important;
 	color: #fff;
@@ -3046,7 +3047,6 @@ ul.tabs li.active{
 	.feature-title span,
 	.mask .feature-title,
 	.flex-caption .details {
-		display: none;
 	}
 
 	.section-heading h1 span {
