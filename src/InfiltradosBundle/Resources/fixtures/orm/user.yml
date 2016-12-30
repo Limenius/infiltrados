@@ -916,6 +916,36 @@ InfiltradosBundle\Entity\User:
         book: Hablemos de langostas
         zodiac: Tauro
         hobby: Jugar al fútbol
+    user56:
+        username: jfcanovasverdu@gmail.com
+        email: jfcanovasverdu@gmail.com
+        name: 'Juan Fernando'
+        surname: 'Cánovas Verdú'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
+    user57:
+        username: patxiforondav@gmail.com
+        email: patxiforondav@gmail.com
+        name: 'Patxi'
+        surname: 'Foronda Verdú'
+        plainPassword: 999999
+        enabled: 1
+        occupation: Software Developer
+        sport: Fútbol
+        movie: Inglorious Basterds
+        token: <uuid()>
+        band: Pulp
+        book: Hablemos de langostas
+        zodiac: Tauro
+        hobby: Jugar al fútbol
 
     #InfiltradosBundle\Entity\UserStatus:
     #    userStatus1-{1..20}:
