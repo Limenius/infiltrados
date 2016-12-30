@@ -6,14 +6,7 @@ InfiltradosBundle\Entity\User:
         name: Victoria
         surname: Quirante
         enabled: 1
-        occupation: Software Developer1
-        sport: Fútbol1
-        movie: Inglorious Basterds1
         token: <uuid()>
-        band: Pulp1
-        book: Hablemos de langostas1
-        zodiac: Tauro1
-        hobby: Jugar al fútbol1
         isSpy: 1
     user2:
         email: 'nitram.ohcan@gmail.com'
@@ -22,14 +15,7 @@ InfiltradosBundle\Entity\User:
         name: Nacho
         surname: Martín Latorre
         enabled: 1
-        occupation: Software Developer2
-        sport: Fútbol2
-        movie: Inglorious Basterds2
         token: <uuid()>
-        band: Pulp2
-        book: Hablemos de langostas2
-        zodiac: Tauro2
-        hobby: Jugar al fútbol2
         isSpy: 1
     #user{3..20}:
     #    email: <email()>
@@ -53,14 +39,7 @@ InfiltradosBundle\Entity\User:
         surname: 'López Molina'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user4:
         username: 'laura.gonzalez.cano@gmail.com'
         email: 'laura.gonzalez.cano@gmail.com'
@@ -68,14 +47,7 @@ InfiltradosBundle\Entity\User:
         surname: 'González Cano'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user5:
         username: 'txnicolas7gmail.com'
         email: 'txnicola7gmail.com'
@@ -83,14 +55,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Nicolás Marín'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user6:
         username: 'luznietof@hotmail.com'
         email: 'luznietof@hotmail.com'
@@ -98,14 +63,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Nieto'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user7:
         username: 'esteespevi@msn.com'
         email: 'esteespevi@msn.com'
@@ -113,14 +71,7 @@ InfiltradosBundle\Entity\User:
         surname: ''
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user8:
         username: 'jmanuel.lopezsanchez@gmail.com'
         email: 'jmanuel.lopezsanchez@gmail.com'
@@ -128,14 +79,7 @@ InfiltradosBundle\Entity\User:
         surname: 'López'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user9:
         username: 'anruizdo@gmail.com'
         email: 'anruizdo@gmail.com'
@@ -143,14 +87,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Ruiz Domenech'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user10:
         username: 'mdpv84hotmail.com'
         email: 'mdpv84hotmail.com'
@@ -158,14 +95,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Pujante'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user11:
         username: 'rociosm83pipa@gmail.com'
         email: 'rociosm83pipa@gmail.com'
@@ -173,14 +103,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Soler'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user111:
         username: 'paulapiscis@hotmail.com'
         email: 'paulapiscis@hotmail.com'
@@ -188,14 +111,7 @@ InfiltradosBundle\Entity\User:
         surname: 'García Sabio'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user12:
         username: 'f.j.ortega.manzanera@gmail.com'
         email: 'f.j.ortega.manzanera@gmail.com'
@@ -203,14 +119,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Ortega'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user13:
         username: 'edufres@hotmail.com'
         email: 'edufres@hotmail.com'
@@ -218,14 +127,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Fresneda Vieco'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user131:
         username: 'giuseppemaselli2519gmail.com'
         email: 'giuseppemaselli2519gmail.com'
@@ -233,14 +135,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Maselli'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user14:
         username: 'antonioruiz@tadeus.es'
         email: 'antonioruiz@tadeus.es'
@@ -248,14 +143,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Ruiz Panalés'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user15:
         username: 'mariajosefemo@gmail.com'
         email: 'mariajosefemo@gmail.com'
@@ -263,14 +151,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Fernández'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user16:
         username: 'guillermo.nicolas.m@gmail.com'
         email: 'guillermo.nicolas.m@gmail.com '
@@ -278,14 +159,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Nicolás Marín'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user161:
         username: 'roargemi32gmail.com'
         email: 'roargemi32gmail.com'
@@ -293,14 +167,15 @@ InfiltradosBundle\Entity\User:
         surname: 'Hernández Argemi'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
+    user162:
+        username: 'gordda@hotmail.com'
+        email: 'gordda@hotmail.com'
+        name: 'Elena'
+        surname: 'Cano'
+        plainPassword: 999999
+        enabled: 1
+        token: <uuid()>
     user17:
         username: 'zaragozalopeza@gmail.com'
         email: 'zaragozalopeza@gmail.com'
@@ -308,14 +183,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Zaragoza López'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user18:
         username: 'inmaarcemoreno@gmail.com'
         email: 'inmaarcemoreno@gmail.com'
@@ -323,14 +191,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Arce Moreno'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user19:
         username: 'rocio.zaragoza.g@gmail.com'
         email: 'rocio.zaragoza.g@gmail.com'
@@ -338,14 +199,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Zaragoza'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user20:
         username: 'Ana_correo_5hotmail.com'
         email: 'Ana_correo_5hotmail.com'
@@ -353,14 +207,7 @@ InfiltradosBundle\Entity\User:
         surname: 'de Paz Fresneda'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user21:
         username: 'nereaespinosa@gmail.com'
         email: 'nereaespinosa@gmail.com'
@@ -368,14 +215,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Espinosa'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user22:
         username: 'miriperezg@gmail.com'
         email: 'miriperezg@gmail.com'
@@ -383,14 +223,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Pérez García'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user23:
         username: 'alvadito@hotmail.com'
         email: 'alvadito@hotmail.com'
@@ -398,14 +231,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Saura Levia'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user24:
         username: 'Laura.gonz3hotmail.com'
         email: 'Laura.gonz3hotmail.com'
@@ -413,14 +239,7 @@ InfiltradosBundle\Entity\User:
         surname: 'González Cascales'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user25:
         username: 'pedroandresnoguera@gmail.com'
         email: 'pedroandresnoguera@gmail.com'
@@ -428,14 +247,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Noguera'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user26:
         username: 'rachel.samper@hotmail.com'
         email: 'rachel.samper@hotmail.com'
@@ -443,14 +255,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Samper'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user27:
         username: 'oldsixqiu@gmail.com'
         email: 'oldsixqiu@gmail.com'
@@ -458,14 +263,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Pérez'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user28:
         username: 'edu_af2hotmail.com'
         email: 'edu_af2hotmail.com'
@@ -473,14 +271,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Andreo'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user29:
         username: 'rafael.garrido90.rg@gmail.com'
         email: 'rafael.garrido90.rg@gmail.com'
@@ -488,14 +279,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Garrido Sandoval'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user30:
         username: 'jaimeherraizm@gmail.com'
         email: 'jaimeherraizm@gmail.com'
@@ -503,14 +287,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Herraiz Martínez'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user31:
         username: 'carolinacarilla@gmail.com'
         email: 'carolinacarilla@gmail.com'
@@ -518,14 +295,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Peralta'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user311:
         username: 'pablo241990gmail.com'
         email: 'pablo241990gmail.com'
@@ -533,14 +303,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Martínez'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user312:
         username: 'pedro26289hotmail.com'
         email: 'pedro26289hotmail.com'
@@ -548,14 +311,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Puche'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user32:
         username: 'calarcon2305hotmail.com'
         email: 'calarcon2305hotmail.com'
@@ -563,14 +319,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Alarcón'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user33:
         username: 'anabelmoraleda@gmail.com'
         email: 'anabelmoraleda@gmail.com'
@@ -578,14 +327,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Moraleda Aguilar'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user34:
         username: 'rperezllorca@gmail.com'
         email: 'rperezllorca@gmail.com'
@@ -593,14 +335,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Pérez Llorca'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user35:
         username: 'paco.campoch@gmail.com'
         email: 'paco.campoch@gmail.com'
@@ -608,14 +343,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Campos Pérez'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user36:
         username: 'ricardonoguemar@hotmail.com'
         email: 'ricardonoguemar@hotmail.com'
@@ -623,14 +351,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Noguera'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user37:
         username: 'j.s.ros@outlook.com'
         email: 'j.s.ros@outlook.com'
@@ -638,14 +359,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Segura Ros'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user38:
         username: 'teresa.marin.carrasco@gmail.com'
         email: 'teresa.marin.carrasco@gmail.com'
@@ -653,14 +367,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Marín Carrasco'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user39:
         username: 'fede.aliaga@gmail.com'
         email: 'fede.aliaga@gmail.com'
@@ -668,14 +375,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Aliaga Laencina'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user40:
         username: 'marta.b.r@hotmail.com'
         email: 'marta.b.r@hotmail.com'
@@ -683,14 +383,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Bermejo Ruiz'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user41:
         username: 'antoniorme@gmail.com'
         email: 'antoniorme@gmail.com'
@@ -698,14 +391,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Márquez'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user42:
         username: 'eliandaghoum@gmail.com'
         email: 'eliandaghoum@gmail.com'
@@ -713,14 +399,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Daghoum'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user43:
         username: 'jaime.darky@gmail.com'
         email: 'jaime.darky@gmail.com'
@@ -728,14 +407,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Martínez Manzano'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user44:
         username: 'luismrodriguezef@gmail.com'
         email: 'luismrodriguezef@gmail.com'
@@ -743,14 +415,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Marín Rodríguez'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user45:
         username: 'jotaerre90hotmail.com'
         email: 'jotaerre90hotmail.com'
@@ -758,14 +423,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Collado'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user46:
         username: 'enrike_mf@hotmail.com'
         email: 'enrike_mf@hotmail.com'
@@ -773,14 +431,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Montesinos'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user47:
         username: 'guillermo.artigao@gmail.com'
         email: 'guillermo.artigao@gmail.com'
@@ -788,14 +439,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Artigao'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user48:
         username: 'jalbarracinq@gmail.com'
         email: 'jalbarracinq@gmail.com'
@@ -803,14 +447,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Albarracín'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user49:
         username: 'olisovol@gmail.com'
         email: 'olisovol@gmail.com'
@@ -818,14 +455,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Lisovol'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user50:
         username: mariamoyasanchez@gmail.com
         email: mariamoyasanchez@gmail.com
@@ -833,14 +463,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Moya'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user51:
         username: maricruz_moya@hotmail.com
         email: maricruz_moya@hotmail.com
@@ -848,14 +471,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Moya'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user52:
         username: angel.jesus.1504gmail.com
         email: angel.jesus.150mail.com
@@ -863,14 +479,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Guirao Dejodar'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user53:
         username: jesusnc90gmail.com
         email: jesusnc90gmail.com
@@ -878,14 +487,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Nicolás Campoy'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user54:
         username: fakemfcb84gmail.com
         email: fakemfcb84gmail.com
@@ -893,14 +495,7 @@ InfiltradosBundle\Entity\User:
         surname: 'López Ruiz'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user55:
         username: roy@nido.ai
         email: roy@nido.ai
@@ -908,14 +503,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Petter Torgensen'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user56:
         username: jfcanovasverdu@gmail.com
         email: jfcanovasverdu@gmail.com
@@ -923,14 +511,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Cánovas Verdú'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
     user57:
         username: patxiforondav@gmail.com
         email: patxiforondav@gmail.com
@@ -938,14 +519,7 @@ InfiltradosBundle\Entity\User:
         surname: 'Foronda Verdú'
         plainPassword: 999999
         enabled: 1
-        occupation: Software Developer
-        sport: Fútbol
-        movie: Inglorious Basterds
         token: <uuid()>
-        band: Pulp
-        book: Hablemos de langostas
-        zodiac: Tauro
-        hobby: Jugar al fútbol
 
     #InfiltradosBundle\Entity\UserStatus:
     #    userStatus1-{1..20}:
