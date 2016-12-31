@@ -1093,9 +1093,9 @@ body:before {
 --------------------------------------------------*/
 
 #header-navigation[role="navigation"] {
-    line-height: 25px;
-	font-size: 25px;
-	margin-top: 15px;
+    line-height: 35px;
+	font-size: 35px;
+	margin-top: 25px;
 	position: relative;
 	text-align: right;
 }
@@ -3029,7 +3029,7 @@ ul.tabs li.active{
         font-size: 2em;
     }
 
-	#header-navigation[role="navigation"] ul {
+	#header-navigation[role="navigatin"] ul {
 	}
 	
 	.selectnav {

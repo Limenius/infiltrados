@@ -62,18 +62,19 @@ table#ranking {
     }
 }
 
-.red {
+.red { 
     color: #e15154;
 }
 
 .profile-info {
-    margin-top: 5px;
+    margin-top: 10px;
     .profile-item {
-        font-size: 26px;
+        font-size: 30px;
+        line-height: 30px;
     }
 }
 
 p {
-    font-size: 20px !important;
-    line-height: 25px !important;
+    font-size: 30px !important;
+    line-height: 35px !important;
 }
