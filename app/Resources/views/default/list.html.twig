@@ -10,7 +10,7 @@
             <script>
             var identifier = new Identifier('{{url('identify')}}');
             </script>
-        {% for userStatus in users %}
+        {% for userStatus in users|shuffle %}
         <article class="homepage one-third column" statusId="{{userStatus.id}}">
                 <script>
                 identifier.addUser({{userStatus.id}});
