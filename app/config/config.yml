@@ -7,7 +7,7 @@ imports:
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    locale: en
+    locale: es
 
 framework:
     #esi:             ~
@@ -72,14 +72,22 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: gmail
-    username:  nochevieja31
-    password:  swankyCat
+    transport: smtp
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    host: smtp.sendgrid.net
+    port: 587
+    encryption: ~
+    spool:     { type: memory }
+
 
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
     user_class: InfiltradosBundle\Entity\User
+    from_email:
+        address:        nochevieja31@gmail.com
+        sender_name:    "nochevieja31"
     registration:
         confirmation:
             enabled: true
@@ -114,3 +122,5 @@ liip_imagine :
                 # create a thumbnail: set size to 120x90 and use the "outbound" mode
                 # to crop the image when the size ratio of the input differs
                 thumbnail  : { size : [400, 400], mode : outbound }
+
+

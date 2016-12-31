@@ -794,10 +794,10 @@ textarea.error {
 
 /* Note: Design for a width of 320px */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
     
     .container { 
-    	width: 360px; 
+    	width: 80%; 
         text-align: center;
     }
     
@@ -825,7 +825,7 @@ textarea.error {
     .container .sixteen.columns,
     .container .one-third.column,
     .container .two-thirds.column  { 
-    	width: 360px; 
+    	width: 100%; 
     }
 
     /* Offsets */
@@ -857,7 +857,7 @@ textarea.error {
 /*@media only screen and (min-width: 480px) and (max-width: 767px) {
     
     .container { 
-    	width: 300px; 
+    	width: 480px; 
     }
     
     .container .columns,
@@ -884,11 +884,11 @@ textarea.error {
     .container .sixteen.columns,
     .container .one-third.column,
     .container .two-thirds.column { 
-    	width: 300px; 
+    	width: 480px; 
     }
 
-}*/
-
+}
+*/
 /* Clearing (Clearfix)
 --------------------------------------------------*/
 
@@ -1073,7 +1073,7 @@ body:before {
 
 .section-heading p:first-of-type {
 	float: left;
-	font-size: 18px;
+	font-size: 35px;
 	line-height: 1.7;
 	padding-top: 10px;
 }
@@ -1093,8 +1093,9 @@ body:before {
 --------------------------------------------------*/
 
 #header-navigation[role="navigation"] {
-	font-size: 12px;
-	margin-top: 15px;
+    line-height: 35px;
+	font-size: 35px;
+	margin-top: 25px;
 	position: relative;
 	text-align: right;
 }
@@ -1251,12 +1252,13 @@ a.back-to-top-link span {
 --------------------------------------------------*/
 
 a.read-more-btn {
+    line-height: 50px;
 	background-color: #e15154;
 	border-bottom: none!important;
 	color: #fff;
 	display: inline-block;
 	font-family: 'Oswald', sans-serif; /* This theme uses Google Web Fonts. To change this font, go to http://www.google.com/webfonts/ and follow the instructions there. */
-	font-size: 16px;
+	font-size: 35px;
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -1530,7 +1532,7 @@ a.read-more-btn:hover {
 }
 
 .four.columns .project-item  .read-more-btn {
-	font-size: 13px;
+	font-size: 25px;
 }
 
 /* Single Project
@@ -2930,7 +2932,7 @@ ul.tabs li.active{
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
 	#header-navigation[role="navigation"] li a {
-		padding: 5px 15px;
+		padding: 15px 15px;
 	    cursor: pointer;
 	}
 	
@@ -3005,7 +3007,15 @@ ul.tabs li.active{
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 560px) {
+	.flex-title,
+	.flex-direction-nav a {
+		display: none !important;
+	}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 1023px) {
 
 	#header-global {
 		text-align: center;
@@ -3015,7 +3025,11 @@ ul.tabs li.active{
 		text-align: center;
 	}
 
-	#header-navigation[role="navigation"] ul {
+    #logo.logo31 {
+        font-size: 2em;
+    }
+
+	#header-navigation[role="navigatin"] ul {
 	}
 	
 	.selectnav {
@@ -3066,7 +3080,7 @@ ul.tabs li.active{
 	
 	.flex-title,
 	.flex-direction-nav a {
-		display: none!important;
+        font-size: 12px;
 	}
 	
 	#portfolio-filter li {

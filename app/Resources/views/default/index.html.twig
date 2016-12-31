@@ -11,10 +11,10 @@
                         <li><a href=""><img class="img-responsive" src="/assets/img/basterdsBW.jpg" alt="" /></a>
                             <div class="flex-caption">
                                 <div class="details">
-                                    <h1 class="flex-title"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br /><span>La última noche... del año</span></h1>
+                                    <h1 class="flex-title"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br /><span>La última fiesta... del año</span></h1>
                                     <p> </p>
                                     {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
-                                    <a class="read-more-btn btn-big" href="{{ path('list') }}">Lista de invitados &rarr;</a>
+                                    <a class="read-more-btn btn-big" href="{{ path('list') }}">Invitados &rarr;</a>
                                     {% else %}
                                     <a class="read-more-btn btn-big" href="{{ path('fos_user_security_login') }}">Entrar &rarr;</a>
                                     {% endif %}
