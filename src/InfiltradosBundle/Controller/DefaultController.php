@@ -22,7 +22,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/list", name="list")
+     * @Route("/manage/list", name="list")
      */
     public function listAction()
     {
@@ -35,7 +35,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/ranking", name="ranking")
+     * @Route("/manage/ranking", name="ranking")
      */
     public function rankingAction()
     {
@@ -47,7 +47,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/edit-profile", name="edit_profile")
+     * @Route("/manage/edit-profile", name="edit_profile")
      */
     public function editProfileAction(Request $request)
     {
@@ -80,7 +80,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/identify", name="identify")
+     * @Route("/manage/identify", name="identify")
      */
     public function identifyAction(Request $request)
     {
