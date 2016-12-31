@@ -36,7 +36,7 @@
 
                 {% set data = [userStatus.suspect.occupation, userStatus.suspect.movie, userStatus.suspect.sport, userStatus.suspect.band, userStatus.suspect.zodiac, userStatus.suspect.book, userStatus.suspect.hobby ] %}
                 {% for item in data|shuffle|slice(0, 3) %}
-                    <p>{{ item }}</p>
+                    <p class="profile-item">{{ item }}</p>
                 {% endfor %}
 
                 {% if userStatus.status == 'hidden' %}

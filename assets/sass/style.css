@@ -1093,7 +1093,8 @@ body:before {
 --------------------------------------------------*/
 
 #header-navigation[role="navigation"] {
-	font-size: 12px;
+    line-height: 25px;
+	font-size: 22px;
 	margin-top: 15px;
 	position: relative;
 	text-align: right;
