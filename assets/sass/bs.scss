@@ -66,6 +66,14 @@ table#ranking {
     color: #e15154;
 }
 
-.profile-item {
-    font-size: 26px;
+.profile-info {
+    margin-top: 5px;
+    .profile-item {
+        font-size: 26px;
+    }
+}
+
+p {
+    font-size: 20px !important;
+    line-height: 25px !important;
 }

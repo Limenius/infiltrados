@@ -35,9 +35,11 @@
                 {% endif %}
 
                 {% set data = [userStatus.suspect.occupation, userStatus.suspect.movie, userStatus.suspect.sport, userStatus.suspect.band, userStatus.suspect.zodiac, userStatus.suspect.book, userStatus.suspect.hobby ] %}
+                <div class="profile-info">
                 {% for item in data|shuffle|slice(0, 3) %}
                     <p class="profile-item">{{ item }}</p>
                 {% endfor %}
+                </div>
 
                 {% if userStatus.status == 'hidden' %}
                 <a class="read-more-btn" href="javascript:void(0);">Identificar &rarr;</a>

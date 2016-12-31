@@ -1073,7 +1073,7 @@ body:before {
 
 .section-heading p:first-of-type {
 	float: left;
-	font-size: 18px;
+	font-size: 35px;
 	line-height: 1.7;
 	padding-top: 10px;
 }
@@ -1094,7 +1094,7 @@ body:before {
 
 #header-navigation[role="navigation"] {
     line-height: 25px;
-	font-size: 22px;
+	font-size: 25px;
 	margin-top: 15px;
 	position: relative;
 	text-align: right;
@@ -1532,7 +1532,7 @@ a.read-more-btn:hover {
 }
 
 .four.columns .project-item  .read-more-btn {
-	font-size: 13px;
+	font-size: 25px;
 }
 
 /* Single Project
@@ -2932,7 +2932,7 @@ ul.tabs li.active{
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
 	#header-navigation[role="navigation"] li a {
-		padding: 5px 15px;
+		padding: 15px 15px;
 	    cursor: pointer;
 	}
 	
@@ -3024,6 +3024,10 @@ ul.tabs li.active{
 	#header-navigation[role="navigation"] {
 		text-align: center;
 	}
+
+    #logo.logo31 {
+        font-size: 2em;
+    }
 
 	#header-navigation[role="navigation"] ul {
 	}
