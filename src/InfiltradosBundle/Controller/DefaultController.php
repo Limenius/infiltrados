@@ -94,7 +94,23 @@ class DefaultController extends Controller
             $userStatus->setStatus('matched');
             if ($userStatus->getSuspect()->getIsSpy()) {
                 $spies = $user->getSpiesIdentified();
-                $user->setSpiesIdentified($spies + 1);
+                $spies ++;
+                $user->setSpiesIdentified($spies);
+                if ($spies == 5) {
+                    $message = \Swift_Message::newInstance();
+                    $message
+                        ->setSubject('Alguien ha llegado a 5')
+                        ->setTo('victoria.quirante@gmail.com')
+                        ->setFrom(['nochevieja31@gmail.com' => 'Nochevieja31'])
+                        ->setBody(
+                            $this->renderView(
+                                'email/alert_finish.html.twig',
+                                ['name' => $user->getFullName()]
+                            ),
+                            'text/html'
+                        );
+                    $this->get('mailer')->send($message);
+                }
             }
             $guests = $user->getGuestsIdentified();
             $user->setGuestsIdentified($guests + 1);
