@@ -260,7 +260,7 @@ InfiltradosBundle\Entity\User:
         username: 'oldsixqiu@gmail.com'
         email: 'oldsixqiu@gmail.com'
         name: 'Pablo'
-        surname: 'Pérez'
+        surname: 'Pérez Novoa'
         plainPassword: 999999
         enabled: 1
         token: <uuid()>
