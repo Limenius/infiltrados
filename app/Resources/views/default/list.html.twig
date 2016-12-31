@@ -10,8 +10,9 @@
             <script>
             var identifier = new Identifier('{{url('identify')}}');
             </script>
+            <div class="row">
         {% for userStatus in users %}
-        <article class="homepage one-third column" statusId="{{userStatus.id}}">
+        <article class="col-md-4 homepage one-third column" statusId="{{userStatus.id}}">
                 <script>
                 identifier.addUser({{userStatus.id}});
                 </script>
@@ -45,6 +46,7 @@
 
             </article><!-- end article -->
         {% endfor %}
+    </div>
         </div>
     </div>
 </div>

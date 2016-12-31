@@ -854,7 +854,7 @@ textarea.error {
 
 /* Note: Design for a width of 480px */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/*@media only screen and (min-width: 480px) and (max-width: 767px) {
     
     .container { 
     	width: 300px; 
@@ -887,7 +887,7 @@ textarea.error {
     	width: 300px; 
     }
 
-}
+}*/
 
 /* Clearing (Clearfix)
 --------------------------------------------------*/
@@ -3046,7 +3046,6 @@ ul.tabs li.active{
 	.feature-title span,
 	.mask .feature-title,
 	.flex-caption .details {
-		display: none;
 	}
 
 	.section-heading h1 span {

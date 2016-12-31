@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>{% block title %}Nochevieja 2016 - Murcia{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
@@ -15,44 +16,41 @@
     <body>
     {% block body %}
         
-	<header id="header-global" role="banner">
-	
-		<div class="container">
-			
-			<div class="row">
-		
-				<div class="three columns">
-					
-                    <div id="logo" class="logo31"><a href="{{ path('homepage') }}" title="treinta3y1uno">treinta3y1uno</a></div>
-				  	
-				</div>
-
-				<nav id="header-navigation" class="thirteen columns" role="navigation">
-					
+        <header class="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                    <a id="logo" class="navbar-brand logo logo31" href="{{ path('homepage') }}" title="treinta3y1uno">treinta3y1uno</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
                     {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
-					<ul id="navigation">
+                  <ul class="nav navbar-nav navbar-right">
 						<li><a href="{{ path('homepage') }}" title="Hall">Hall</a></li>
 						<li><a href="{{ path('edit_profile') }}" title="Mi perfil">Mi perfil</a></li>
 						<li><a href="{{ path('list') }}" title="Invitados">Invitados</a></li>
 						<li><a href="{{ path('ranking') }}" title="Ranking">Ranking</a></li>
-					</ul><!-- end #navigation -->
+                  </ul>
                     {% endif %}
-				
-				</nav><!-- end #header-navigation -->
-				
-			</div><!-- end .row -->
-		
-	</header><!-- end #header-global -->
+                </div><!--/.nav-collapse -->
+              </div>
+            </nav>
+        </header>
         {% block content %}
         {% endblock %}
     {% endblock %}
-	<footer id="footer-global" role="contentinfo" class="clearfix">
-				
-		<div id="contact-details">
+    {% block footer %}
+    <footer class="footer" role="contentinfo">
+		<div id="contact-details" class="container">
 		
-			<div class="container">
+			<div class="row">
 		
-				<div class="one-third column">
+				<div class="col-md-4">
 				
 					<h3>Localización</h3>
 					
@@ -61,7 +59,7 @@
 				
 				</div>
 				
-				<div class="one-third column">
+				<div class="col-md-4">
 				
 					<h3>Contacto</h3>
 					
@@ -75,15 +73,19 @@
 	
 		<div class="container">
 	
-			<div class="sixteen columns">
+			<div class="row">
+			<div class="col-md-12">
 		  	  
 	  			<p id="copyright-details">&copy; 2016. Treinta3y1Uno</p>
 	  		
 	  		</div>	  
+	  		</div>	  
 		  	
 		</div><!-- end .container -->
+    </footer>
+    {% endblock footer %}
+				
 		
-	</footer><!-- end #footer-global -->
 	
         {% block javascripts %}{% endblock %}
     </body>
